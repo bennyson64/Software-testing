@@ -1,4 +1,4 @@
-/** biome-ignore-all lint/performance/useTopLevelRegex: <explanation> */
+/** biome-ignore-all lint/performance/useTopLevelRegex: explanation */
 import { expect, test } from "@playwright/test";
 
 test.describe("Task CRUD flow", () => {
