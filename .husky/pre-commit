@@ -1,0 +1,6 @@
+pnpm fix
+pnpm check
+pnpm tsc -p apps/web/tsconfig.app.json --noEmit
+pnpm tsc -p apps/api/tsconfig.json --noEmit
+
+git add --update
