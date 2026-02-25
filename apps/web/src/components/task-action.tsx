@@ -94,10 +94,16 @@ export function TaskActions({ task }: { task: Task }) {
 
   return (
     <div className="mt-2 flex gap-2">
-      <Button onClick={() => setIsEditing(true)} size="sm" variant="outline">
+      <Button
+        aria-label="edit task"
+        onClick={() => setIsEditing(true)}
+        size="sm"
+        variant="outline"
+      >
         <Pencil className="h-4 w-4" />
       </Button>
       <Button
+        aria-label="delete task"
         disabled={deleteMutation.isPending}
         onClick={() => deleteMutation.mutate()}
         size="sm"
